@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #c7c7c7;
+}
+
+.container{
+    width: 1000px; height: 1500%;
+    border: 3px solid black;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 150px 600px 400px 400px 150px;
+}
+
+header{
+    background-color: lightcoral;
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+aside{
+    background-color: lightcyan;
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+main{
+    background-color: lightgreen;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.seccion1{
+    background-color: lightsalmon;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.seccion2{
+    background-color: magenta;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+footer{
+    background-color: mediumblue;
+    grid-column: 1/4;
+    grid-row: 4/5
+}
+
+/*
+1. En el padre designas las areas:
+
+grid-template-areas: "header header header"
+"aside main main"
+"aside seccion1 seccion1"
+"aside seccion2 seccion2"
+"footer footer footer"
+
+2. A los hijos designas sus areas:
+
+grid-area: "";
+
+3. Grid normal. (El mejor)
+Se designan columnas y filas.
+
+grid-template-columns: 20% 40% %40
+
+grid-template-row: 150px 600px 400px 400px 150px
+
+2.
+header{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+*/
