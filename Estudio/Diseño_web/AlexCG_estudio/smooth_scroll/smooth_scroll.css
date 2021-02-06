@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px;
+    align-items: center;
+}
+
+section h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+section p{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+section a{
+    display: inline-block;
+    padding: 7px 0;
+    color: #283773;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    background: #ffffff;
+}
+
+section img{
+    height: 60%;
+}
+
+section:nth-child(1){
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+section:nth-child(2){
+    background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+}
+
+section:nth-child(3){
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+
+@media screen and (max-width:1000px){
+    section{
+        flex-direction: column-reverse;
+    }
+
+    section > img{
+        height: 40%;
+    }
+    
+    .contenedor-texto{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    section > img{
+        height: 25%;
+    }
+}
