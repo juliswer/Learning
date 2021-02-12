@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet"> 
+	<link rel="stylesheet" href="/Estudio/Diseno_web/FalconMasters/menu_navegacion/pushbar.css">
+	<link rel="stylesheet" href="/Estudio/Diseno_web/FalconMasters/menu_navegacion/menu_navegacion.css">
+	<title>Watch Store</title>
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<h1>FalconMasters</h1>
+			<h2>Lorem Ipsum Premium Store</h2>
+		</header>
+		<main>
+			<nav>
+				<button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
+				<a href="#" class="banner" data-pushbar-target="pushbar-productos">Otros productos Exclusivos</a>
+			</nav>
+			<section class="productos">
+				<figure>
+					<img src="img/img1.jpg" alt="">
+					<figcaption>
+						<a href="#" data-pushbar-target="pushbar-carrito">
+							<span>$1800</span>
+							<span>Comprar</span>
+						</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img/img2.jpg" alt="">
+					<figcaption>
+						<a href="#" data-pushbar-target="pushbar-carrito">
+							<span>$1800</span>
+							<span>Comprar</span>
+						</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img/img3.jpg" alt="">
+					<figcaption>
+						<a href="#" data-pushbar-target="pushbar-carrito">
+							<span>$1800</span>
+							<span>Comprar</span>
+						</a>
+					</figcaption>
+				</figure>
+			</section>
+		</main>
+
+		<!-- Pushbars: Menu -->
+		<div data-pushbar-id="pushbar-menu" data-pushbar-direction="left" class="pushbar">
+			<div class="btn-cerrar derecha">
+				<button data-pushbar-close><i class="fas fa-times cerrar"></i></button>
+			</div>
+			<nav class="menu">
+				<a href="#">Inicio</a>
+				<a href="#">Nuestros productos</a>
+				<a href="#">Nuestras tiendas</a>
+				<a href="#">Agentes de ventas</a>
+				<a href="#">Contacto</a>
+			</nav>
+		</div>
+		
+		<!-- Pushbars: Carrito de Compras -->
+		
+
+		<!-- Pushbars: Productos -->
+		
+
+		<!-- Pushbars: Newsletter -->
+		
+	</div>
+
+	<script src="/Estudio/Diseno_web/FalconMasters/menu_navegacion/pushbar.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script type="text/javascript">
+		const pushbar = new Pushbar({
+			  blur:true,
+			  overlay: false,
+			});
+	  </script>
+</body>
+</html>
