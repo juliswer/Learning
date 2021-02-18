@@ -568,22 +568,6 @@ console.log(nombre.toLowerCase()); //vuelve todo a minúscula
 
                     'CLASE 19'
 
-  /*        
-  Para esta clase se escribió el siguiente código en html:
-  
-  <!DOCTYPE html>
-      <html lang="en">
-        <head>
-         <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Document</title>
-        </head>
-        <body>
-             
-        </body>
-      </html>
-  */
-
   var arreglos = [1,2,3,4];
 
   var curso = {
@@ -601,3 +585,26 @@ console.log(nombre.toLowerCase()); //vuelve todo a minúscula
   console.log(curso.titulo);
   console.log(curso.videos);
   console.log(curso.tutor);
+
+                      'CLASE 20'
+
+  function tutor () {
+    this.nombre = nombre;
+    this.saludar = function() {
+      console.log("Hola a todos, soy " + this.nombre);
+    }
+    if(typeof apellido !== "undefined"){
+    this.nombre_completo = nombre + " " + apellido;
+    }
+
+  }               
+  
+  var julian = new tutor("Julián", "Swerdlin");
+
+  julian.saludar();
+
+  console.log(julian.nombre_completo)
+
+  var pepito = new tutor ("Pepito");
+
+  pepito.saludar();
