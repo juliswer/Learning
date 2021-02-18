@@ -542,6 +542,7 @@ console.log(nombre.toLowerCase()); //vuelve todo a minúscula
         </body>
       </html>
   */
+
   (function(){
     document.getElementById('btn').addEventListener('click', function() {
       console.log("Hizo click en mi");
@@ -564,3 +565,39 @@ console.log(nombre.toLowerCase()); //vuelve todo a minúscula
   }, 1000)
 
   // Se denomina closures a funciones las cuales se declaran en otras funciones
+
+                    'CLASE 19'
+
+  /*        
+  Para esta clase se escribió el siguiente código en html:
+  
+  <!DOCTYPE html>
+      <html lang="en">
+        <head>
+         <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+        </head>
+        <body>
+             
+        </body>
+      </html>
+  */
+
+  var arreglos = [1,2,3,4];
+
+  var curso = {
+    titulo: "Curso javascript",
+    videos: 19,
+    tutor: "Uriel",
+    introduccion: function() {
+      console.log("Bienvenido al curso: " + this.titulo + "que tiene " + this.videos); //la palabra this nos permite acceder a los demás atributos de un mismo json
+    }
+  };
+
+  console.log(curso.introduccion());
+
+  //Para imprimir un valor se pone el nombre de la variable acompañado del dato a saber:
+  console.log(curso.titulo);
+  console.log(curso.videos);
+  console.log(curso.tutor);
