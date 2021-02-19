@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slider-contenedor {
+    display: flex;
+    background: #f2f2f2;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+}
+
+.slider-test {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+}
