@@ -1,0 +1,56 @@
+.reloj {
+    padding: 100px;
+    background-image: url(img/giro.png);
+    width: 350px;
+    height: 350px;
+    border-radius: 300px;
+    background-color: #ededed;
+    background-size: 100%;
+    border: 10px solid #555;
+    display: flex;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+body {
+    background: #ededed;
+}
+
+.reloj img {
+    position: relative;
+    height: 300px;
+    transition: 0.5s all;
+}
+
+.reloj #minutos,
+.reloj #segundos {
+    position: absolute;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex .contenido {
+    background: #fff;
+    box-shadow: 0 0 20px #ccc;
+    margin: 22px;
+    padding: 32px;
+    flex: 4 4;
+}
+
+.flex .contenido:first-child {
+    flex: 5 5;
+}
+
+.contenido p {
+    font-size: 70px;
+    color: #333;
+    text-align: center;
+}
+
+.contenido h4 {
+    font-size: 70px;
+    color: #333;
+    text-align: center;
+}
