@@ -3,12 +3,27 @@ from tkinter import *
 ventana = Tk()
 ventana.title("Calculadora")
 
+i = 0
+
 e_text = Entry(ventana, font = ("Calibri 20"))
 e_texto.grid(row = 0, column = 0, columnspan = 4, padx = 5, pady = 5) 
 
 #Funciones
 def click_boton(valor):
-    return
+    global i
+    e_text.insert(0, valor)
+    i += 1
+
+def borrar():
+    e_text.delete(0, END)
+    i = 0
+
+def hacer_operacio():
+    ecuacion = e_text.get()
+    result = eval(ecuacion)
+    e_text.delete(0, END)
+    e_text.insert(0, result)
+    i = 0
 
 # Botones 
 
@@ -23,7 +38,7 @@ boton8 = Button(ventana text = "8", width = 5, height = 2 command = lambda: clic
 boton9 = Button(ventana text = "9", width = 5, height = 2 command = lambda: click_boton(9))
 boton0 = Button(ventana text = "0", width = 13, height = 2 command = lambda: click_boton(0))
 
-boton_borrar = Button(ventana, text = "AC", width = 5, height = 2 command = lambda: click_boton())
+boton_borrar = Button(ventana, text = "AC", width = 5, height = 2 command = lambda: borrar())
 boton_parentesis1 = Button(ventana text = "(", width = 5, height = 2 command = lambda: click_boton("("))
 boton_parentesis2 = Button(ventana text = ")", width = 5, height = 2 command = lambda: click_boton(")"))
 boton_punto = Button(ventana text = ".", width = 5, height = 2 command = lambda: click_boton("."))
@@ -32,7 +47,7 @@ boton_div = Button(ventana text = "/", width = 5, height = 2 command = lambda: c
 boton_mult = Button(ventana text = "x", width = 5, height = 2 command = lambda: click_boton("*"))
 boton_sum = Button(ventana text = "+", width = 5, height = 2 command = lambda: click_boton("+"))
 boton_rest = Button(ventana text = "-", width = 5, height = 2 command = lambda: click_boton("-"))
-boton_igual = Button(ventana text = "=", width = 5, height = 2 command = lambda: click_boton("="))
+boton_igual = Button(ventana text = "=", width = 5, height = 2 command = lambda: hacer_operacio("="))
 
 #Botones en pantalla
 
