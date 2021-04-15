@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const table = document.getElementById('table');
     const btn = document.getElementById('add');
     const alert = document.getElementById('alert');
-    let id = 1;
+    let id = 1
 
     function removeTodo(id){
         console.log(id);
