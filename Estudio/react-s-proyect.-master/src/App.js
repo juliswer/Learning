@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 export default function App() {
-  const contadorInicial = Number(localStorage.getItem('contador'))
+  const contadorInicial = Number(localStorage.getItem('contador'));
   const [counter, setCounter] = React.useState(contadorInicial);
 
   const sumarContador = () => {
