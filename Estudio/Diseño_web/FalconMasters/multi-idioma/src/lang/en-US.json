@@ -1,0 +1,10 @@
+{
+    "app.welcome": "Welcome, Carlos",
+
+    "menu.home": "Home",
+    "menu.explore": "Explore",
+    "menu.profile": "Profile",
+
+    "profile.title": "Profile",
+    "explore.title": "Explore"
+}
