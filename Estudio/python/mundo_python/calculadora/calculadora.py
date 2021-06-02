@@ -14,7 +14,7 @@ def click_boton(valor):
     e_text.insert(0, valor)
     i += 1
 
-def borrar():
+def borrar()
     e_text.delete(0, END)
     i = 0
 
