@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="theme-color" content="#000">
+        <meta name="robots" content="index, follow">
+        <meta property="og:url" content="https://lulubaroy.github.io/Orinoco/front-end/index.html" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Orinoco - Votre e-commerce spécialisé !" />
+        <meta property="og:description" content="Bienvenue chez Orinoco ! Nous sommes un e-commerce se démarquant des grands groupes en créant des applications thématiques ne vendant qu'un seul groupe de produit!" />
+        <meta property="og:image" content="https://lulubaroy.github.io/La_Chouette_Agence_SEO/assets/img/logo.png" />
+        <meta name="twitter:card" content="website" />
+        <meta name="twitter:site" content="@Orinoco" />
+        <meta name="twitter:creator" content="@Orinoco" />
+        <meta name="twitter:title" content="Orinoco - Votre e-commerce spécialisé !" />
+        <meta name="twitter:description" content="Bienvenue chez Orinoco ! Nous sommes un e-commerce se démarquant des grands groupes en créant des applications thématiques ne vendant qu'un seul groupe de produit!" />
+        <meta name="twitter:image" content="https://lulubaroy.github.io/Orinoco/front-end/assets/img/favicon.jpg"/>
+        <link rel="apple-touch-icon" href="../assets/img/favicon.ico">
+        <title>Orinoco - Votre e-commerce spécialisé !</title>
+        <meta name="description" content="Bienvenue chez Orinoco ! Nous sommes un e-commerce se démarquant des grands groupes en créant des applications thématiques ne vendant qu'un seul groupe de produit!">
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    </head>
+    <body>
+        <header class="header displayFlex">
+            <div id="return">
+                <a href="javascript:history.go(-1)" class="header-a displayFlex" aria-label="Bouton page précédente">
+                    <img class="return" src="../assets/img/return.png" alt="Bouton retour page accueil"/>
+                </a>
+            </div>
+            <a href="../index.html" aria-label="Retour page Accueil" tabindex="0" class="header-a displayFlex">
+                <img class="logo" src="../assets/img/logo.png" alt="logo Orinoco"/>
+            </a>
+            <a id="btn-cart" href="cart.html" class="header-a displayFlex" aria-label="Bouton Accès page panier">
+                <img class="basket" src="../assets/img/basket.png" alt="Image Panier"> Panier
+            </a>
+        </header>
+        <main id="productPage">
+        </main>
+        <footer class="footer displayFlex">
+            <a onclick="aboutUs()" class="footer-a">A propos de nous</a>
+            <a onclick="contactUs()" class="footer-a">Contactez-nous</a>
+        </footer>
+        <script src="../dist/products.bundle.js"></script>
+    </body>
+</html>
